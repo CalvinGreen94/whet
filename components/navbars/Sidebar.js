@@ -60,7 +60,9 @@ export default function Sidebar() {
                     </Flex>
                 
                 <NavItem navSize={navSize} href="staking" icon={FaFunnelDollar} title="Stake CIR" />
+                <NavItem navSize={navSize} href="about" icon={MdSummarize} title="About BCC/CIR" />
                 <NavItem navSize={navSize} href="compounding" icon={TbBusinessplan} title="Compound CIR" />
+
 
             </Flex>
 

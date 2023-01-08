@@ -55,6 +55,7 @@ export default function SidebarDrawer({ onClose, ...rest }) {
                         <Divider />
                     </Flex>
                 <NavItem href="staking" icon={FaFunnelDollar} title="Stake" />
+                <NavItem href="about" icon={MdSummarize} title="About CIR/BCC" />
                 <NavItem href="compounding" icon={FaFunnelDollar} title="Compound" />
 
             </Flex>

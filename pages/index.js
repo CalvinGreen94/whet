@@ -61,7 +61,7 @@ export default function Home() {
             
             <Spacer /> Bored Circles is paired with 55,555,555 CIR (Bounce Tokens) to be shared among holders for each deployed Circle. </span> <Spacer /> 30,858,025 CIR from the total circulating supply will be minted out in total to OG Bored Circle Club holders throughout the Bored Circles minting process. 
             <Spacer /> 
-            You can gain 5 CIR/hr via <span style={{fontWeight: "400"}}><Link href='staking'> Staking </Link>...</span>
+            You can gain 0.005 CIR/hr via <span style={{fontWeight: "400"}}><Link href='staking'> Staking </Link>...</span>
              </font>
             
             <Center>

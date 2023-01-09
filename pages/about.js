@@ -42,10 +42,10 @@ export default function AboutPage() {
 
                         Essentially, coin holders allow their crypto to be used as a part of the blockchain validation process, and are rewarded by the network for the use of their assets. For crypto investors, staking can open up another potential avenue to generating returns.
                     </Center>
-
-
-
                 </Text>
+
+
+                
             </Center>
 
             <Text textStyle="content">

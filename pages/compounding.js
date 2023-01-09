@@ -20,7 +20,9 @@ export default function AboutPage() {
 
 
             <Text textStyle="content">
-                <span style={{ color: "black", fontWeight: "500" }}>Compound CIR </span>, <span style={{ color: "black", fontWeight: "500" }}>Mechanism</span>
+               <Center> <span style={{ color: "black", fontWeight: "500" }}>Compounding: </span></Center>
+                <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center>
+
             </Text>
             
             <Center pt={10}>

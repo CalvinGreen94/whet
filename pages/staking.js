@@ -19,7 +19,7 @@ export default function AboutPage() {
 
             <Text textStyle="content">
                 <span style={{ color: "black", fontWeight: "500" }}>Stake:</span>
-                 <UI />
+                <UI />
 
                 <Center pb={10}>
                     <SBB />
@@ -32,11 +32,12 @@ export default function AboutPage() {
 
 
             <Text textStyle="content">
-                <span style={{ color: "black", fontWeight: "500" }}> WithDraw Stake/Rewards: </span> 
-                <Rewards />             <Center pb={10}>
-                    
+                <span style={{ color: "black", fontWeight: "500" }}> WithDraw Stake/Rewards: </span>
+                <Rewards />       
+                      <Center pb={10}>
+
                     <WTH />
-                </Center>  <Rewards /> <CR /></Text>
+                </Center> <CR /></Text>
 
 
         </Box>

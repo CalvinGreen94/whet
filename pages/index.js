@@ -68,7 +68,7 @@ export default function Home() {
           <MBC />
           </Center>
             
-          See more below...
+          <Link href="about">See more ...</Link>
             </Text>
             
             </Box>
@@ -135,7 +135,7 @@ export default function Home() {
         <Text textStyle="content">
             <br /><br />
             <br /><br />
-            <span style={{fontWeight: "400"}}>Staking Mechs:
+            <span style={{fontWeight: "400"}}>
             For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain 5 CIR/hr.
             <br />
             <br />

@@ -37,9 +37,7 @@ export default function AboutPage() {
                     <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}><Link href="https://www.coinbase.com/learn/crypto-basics/what-is-staking">Staking</Link>:</span><br /><br /></Center>
                     <Center>
                         Staking is the process of locking up crypto holdings in order to obtain rewards or earn interest.
-
                         Staking is a way to use your crypto holdings or coins to earn additional rewards. It can be helpful to think of it as along the lines of generating interest on cash savings, or earning dividends on stock holdings.
-
                         Essentially, coin holders allow their crypto to be used as a part of the blockchain validation process, and are rewarded by the network for the use of their assets. For crypto investors, staking can open up another potential avenue to generating returns.
                     </Center>
                 </Text>
@@ -53,7 +51,6 @@ export default function AboutPage() {
                 <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center><Spacer /><br /><br />
                 <Center>
                     Compounding is the process in which an asset’s earnings, from either capital gains or interest, are reinvested to generate additional earnings over time. This growth, calculated using exponential functions, occurs because the investment will generate earnings from both its initial principal and the accumulated earnings from preceding periods.
-
                     Compounding, therefore, differs from linear growth, where only the principal earns interest each period.
                 </Center>
             </Text>

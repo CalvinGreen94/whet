@@ -6,7 +6,7 @@ import styles from '@styles/About.module.css'
 import CBCC from '@components/mint/CompoundBCC'
 import UI from '@components/mint/userInfo'
 import SBB from '@components/mint/StakeButtonBounce'
-
+import Rewards from '@components/mint/rewards'
 import CR from '@components/mint/claimRewards'
 export default function AboutPage() {
     return (
@@ -65,7 +65,7 @@ export default function AboutPage() {
                 <Center pb={10}>
                     <CBCC />
                 </Center>
-                <UI />
+                <Rewards />
                 <CR />
             </Text>
 

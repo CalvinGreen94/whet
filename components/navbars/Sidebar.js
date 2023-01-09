@@ -4,8 +4,8 @@ import { ImMenu, ImEarth, ImHome, ImCalendar, ImUsers, ImBlog } from 'react-icon
 import { MdSummarize, MdBallot } from 'react-icons/md'
 import NavItem from './NavItem'
 import styles from '@styles/Sidebar.module.css'
-import {FaFunnelDollar} from 'react-icons/fa'; 
-import {TbBusinessplan} from 'react-icons/tb'; 
+import { FaFunnelDollar } from 'react-icons/fa';
+import { TbBusinessplan } from 'react-icons/tb';
 export default function Sidebar() {
     const [navSize, changeNavSize] = useState("small")
     return (
@@ -23,7 +23,7 @@ export default function Sidebar() {
             justifyContent="space-between"
             overflowY="scroll"
             overflowX="hidden"
-            // bgGradient="linear(to-br, #f6ffee,#fef2f2)"
+        // bgGradient="linear(to-br, #f6ffee,#fef2f2)"
         >
             <Flex
                 p="5%"
@@ -32,35 +32,35 @@ export default function Sidebar() {
                 as="nav"
                 background="#CCABD8"
             >
-               <IconButton
+                <IconButton
                     background="#86E3CE"
                     mt={5}
-                    _hover={{background: '#FA897B'}}
+                    _hover={{ background: '#FA897B' }}
                     icon={<ImMenu />}
                     onClick={() => {
-                        if(navSize == "small")
+                        if (navSize == "small")
                             changeNavSize("large")
                         else
                             changeNavSize("small")
                     }}
                 />
-                    <Flex
-                        flexDir="column"
-                        w="100%"
-                        alignItems={navSize == "small" ? "center" : "flex-start"}
-                        // mb={4}
-                    >
-                        <Flex align="center">
-                            {/* <Avatar size="sm" src="../tauros-avatar-black.png" /> */}
-                            <Flex>
-                                <NavItem navSize={navSize} href="/" icon={ImHome} title="Dashboard"/>
-                            </Flex>
+                <Flex
+                    flexDir="column"
+                    w="100%"
+                    alignItems={navSize == "small" ? "center" : "flex-start"}
+                // mb={4}
+                >
+                    <Flex align="center">
+                        {/* <Avatar size="sm" src="../tauros-avatar-black.png" /> */}
+                        <Flex>
+                            <NavItem navSize={navSize} href="/" icon={ImHome} title="Dashboard" />
                         </Flex>
-                        <Divider display={navSize == "small" ? "none" : "flex"} />
                     </Flex>
-                
-                <NavItem navSize={navSize} href="staking" icon={FaFunnelDollar} title="Stake CIR" />
+                    <Divider display={navSize == "small" ? "none" : "flex"} />
+                </Flex>
                 <NavItem navSize={navSize} href="about" icon={MdSummarize} title="About BCC/CIR" />
+
+                <NavItem navSize={navSize} href="staking" icon={FaFunnelDollar} title="Stake CIR" />
                 <NavItem navSize={navSize} href="compounding" icon={TbBusinessplan} title="Compound CIR" />
 
 

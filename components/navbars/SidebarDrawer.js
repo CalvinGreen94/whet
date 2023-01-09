@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from "next/router";
 import { Flex, Divider, Heading, CloseButton } from '@chakra-ui/react'
 import { ImHome, ImCalendar, ImUsers, ImEarth, ImBlog } from 'react-icons/im'
-import { MdSummarize, MdBallot} from "react-icons/md"
+import { MdSummarize, MdBallot } from "react-icons/md"
 import NavItem from './NavItem'
 import styles from '@styles/Sidebar.module.css'
 import FaFunnelDollar from 'react-icons/fa';
-import {TbBusinessplan} from 'react-icons/tb'; 
+import { TbBusinessplan } from 'react-icons/tb';
 
 export default function SidebarDrawer({ onClose, ...rest }) {
-  const router = useRouter();
+    const router = useRouter();
 
-  useEffect(() => {
-    router.events.on("routeChangeComplete", onClose);
-    return () => {
-      router.events.off("routeChangeComplete", onClose);
-    };
-  }, [router.events, onClose]);
+    useEffect(() => {
+        router.events.on("routeChangeComplete", onClose);
+        return () => {
+            router.events.off("routeChangeComplete", onClose);
+        };
+    }, [router.events, onClose]);
 
     return (
         <Flex
@@ -40,22 +40,23 @@ export default function SidebarDrawer({ onClose, ...rest }) {
             >
                 <CloseButton mt={5} display={{ base: "flex", md: "none" }} onClick={onClose} />
 
-                    <Flex
-                        flexDir="column"
-                        w="100%"
-                        alignItems="flex-start"
-                        // mb={4}
-                    >
-                        <Flex mt={4} mb={4} align="center">
+                <Flex
+                    flexDir="column"
+                    w="100%"
+                    alignItems="flex-start"
+                // mb={4}
+                >
+                    <Flex mt={4} mb={4} align="center">
 
-                            <Flex>
-                                <NavItem href="/" icon={ImHome} title="Dashboard"/>
-                            </Flex>
+                        <Flex>
+                            <NavItem href="/" icon={ImHome} title="Dashboard" />
                         </Flex>
-                        <Divider />
                     </Flex>
-                <NavItem href="staking" icon={FaFunnelDollar} title="Stake" />
+                    <Divider />
+                </Flex>
                 <NavItem href="about" icon={MdSummarize} title="About CIR/BCC" />
+
+                <NavItem href="staking" icon={FaFunnelDollar} title="Stake" />
                 <NavItem href="compounding" icon={FaFunnelDollar} title="Compound" />
 
             </Flex>

@@ -49,8 +49,7 @@ export default function UI() {
 //   console.log(config)
   console.log(isError)
   console.log(data)
-  const data1 = String(data)
-  const data2 = Web3.utils.fromWei(String(data1),"ether")
+  const data1 = String(data/1000000000000000000)
 //   // Contract Write
 //   const { data, write } = useContractWrite({
 //     ...config,
@@ -87,7 +86,7 @@ export default function UI() {
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
-      <p> Your CIR Balance: {data2}</p>
+      <p> Your CIR Balance: {data1}</p>
       </Box>
     </>
   )

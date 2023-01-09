@@ -136,7 +136,7 @@ export default function Home() {
             <br /><br />
             <br /><br />
             <span style={{fontWeight: "400"}}>
-            For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain 5 CIR/hr.
+            For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain interest on CIR.
             <br />
             <br />
             <Heading pt={20}>Phase 1:</Heading>

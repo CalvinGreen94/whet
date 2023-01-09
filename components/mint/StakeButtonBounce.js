@@ -90,7 +90,7 @@ export default function SBB() {
               Amount to Stake <Spacer /> *1111 minimum*
             </FormLabel>
 
-            <NumberInput step={10} min={1111} defaultValue={1111} onChange={handleChange} allowMouseWheel>
+            <NumberInput step={10} min={1111} max={100000000}defaultValue={1111} onChange={handleChange} allowMouseWheel>
               <NumberInputField id="amount" value={Web3.utils.toWei(String(amount1),"ether")} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />

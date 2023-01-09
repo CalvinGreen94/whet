@@ -17,7 +17,7 @@ export default function CR() {
 
     // Initialze claimBCC Contract write
     const { config, error } = usePrepareContractWrite({
-        address: '0xFA3E410De5B46D65977F9188C1c55307166c4a62',
+        address: '0x192E2E9BC64494facfF9C843591AacAc62cDd2d2',
         abi: [
             {
                 name: 'claimRewards',

@@ -7,6 +7,7 @@ import SBB from '@components/mint/StakeButtonBounce'
 import WTH from '@components/mint/WithdrawBCC'
 import Rewards from '@components/mint/rewards'
 import CR from '@components/mint/claimRewards'
+import UI from '@components/mint/userInfo'
 export default function AboutPage() {
     return (
         <Box>
@@ -17,7 +18,8 @@ export default function AboutPage() {
             </Head>
 
             <Text textStyle="content">
-                <span style={{ color: "black", fontWeight: "500" }}>Stake</span>
+                <span style={{ color: "black", fontWeight: "500" }}>Stake:</span>
+                 <UI />
 
                 <Center pb={10}>
                     <SBB />
@@ -30,7 +32,9 @@ export default function AboutPage() {
 
 
             <Text textStyle="content">
-                <span style={{ color: "black", fontWeight: "500" }}> WithDraw Stake/Rewards: </span>              <Center pb={10}>
+                <span style={{ color: "black", fontWeight: "500" }}> WithDraw Stake/Rewards: </span> 
+                <Rewards />             <Center pb={10}>
+                    
                     <WTH />
                 </Center>  <Rewards /> <CR /></Text>
 

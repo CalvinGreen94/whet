@@ -45,8 +45,18 @@ export default function AboutPage() {
                 </Text>
 
 
-                
+
             </Center>
+            <Spacer /><br /><br />
+            <Text textStyle="content">
+                <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}><Link href="https://www.coinbase.com/learn/crypto-basics/what-is-staking">Compounding</Link>:</span><br /><br /></Center>
+                <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center><Spacer /><br /><br />
+                <Center>
+                    Compounding is the process in which an asset’s earnings, from either capital gains or interest, are reinvested to generate additional earnings over time. This growth, calculated using exponential functions, occurs because the investment will generate earnings from both its initial principal and the accumulated earnings from preceding periods.
+
+                    Compounding, therefore, differs from linear growth, where only the principal earns interest each period.
+                </Center>
+            </Text>
 
             <Text textStyle="content">
                 Compound  CIR

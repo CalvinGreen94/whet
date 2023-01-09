@@ -5,6 +5,8 @@ import { About } from '@components/animations/AnimatedTitles'
 import styles from '@styles/About.module.css'
 import CBCC from '@components/mint/CompoundBCC'
 import UI from '@components/mint/userInfo'
+import SBB from '@components/mint/StakeButtonBounce'
+
 import CR from '@components/mint/claimRewards'
 export default function AboutPage() {
     return (
@@ -40,6 +42,9 @@ export default function AboutPage() {
                         Staking is a way to use your crypto holdings or coins to earn additional rewards. It can be helpful to think of it as along the lines of generating interest on cash savings, or earning dividends on stock holdings.
                         Essentially, coin holders allow their crypto to be used as a part of the blockchain validation process, and are rewarded by the network for the use of their assets. For crypto investors, staking can open up another potential avenue to generating returns.
                     </Center>
+                    <Center pb={10}>
+                    <SBB />
+                </Center>
                 </Text>
 
 

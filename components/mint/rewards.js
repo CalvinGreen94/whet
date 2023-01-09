@@ -50,6 +50,8 @@ export default function Rewards() {
   console.log(isError)
   console.log(data)
   const data1 = String(data)
+  const data2 = Web3.utils.fromWei(String(data1),"ether")
+
 //   // Contract Write
 //   const { data, write } = useContractWrite({
 //     ...config,
@@ -86,7 +88,7 @@ export default function Rewards() {
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
-      <p> Your CIR Rewards: {data1}</p>
+      <p> Your CIR Rewards: {data2}</p>
       </Box>
     </>
   )

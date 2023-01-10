@@ -7,6 +7,7 @@ import NavItem from './NavItem'
 import styles from '@styles/Sidebar.module.css'
 import FaFunnelDollar from 'react-icons/fa';
 import { TbBusinessplan } from 'react-icons/tb';
+import {IoNewspaper} from 'react-icons/io'
 
 export default function SidebarDrawer({ onClose, ...rest }) {
     const router = useRouter();
@@ -54,6 +55,9 @@ export default function SidebarDrawer({ onClose, ...rest }) {
                     </Flex>
                     <Divider />
                 </Flex>
+
+                <NavItem href="https://bored-circles-club.gitbook.io/product-docs/" icon={IoNewspaper} title="B.C.C/$CIR WHITEPAPER" />
+
                 <NavItem href="about" icon={MdSummarize} title="About CIR/BCC" />
 
                 <NavItem href="staking" icon={FaFunnelDollar} title="Stake" />

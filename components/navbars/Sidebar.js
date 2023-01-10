@@ -6,6 +6,7 @@ import NavItem from './NavItem'
 import styles from '@styles/Sidebar.module.css'
 import { FaFunnelDollar } from 'react-icons/fa';
 import { TbBusinessplan } from 'react-icons/tb';
+import {IoNewspaper} from 'react-icons/io'
 export default function Sidebar() {
     const [navSize, changeNavSize] = useState("small")
     return (
@@ -58,6 +59,8 @@ export default function Sidebar() {
                     </Flex>
                     <Divider display={navSize == "small" ? "none" : "flex"} />
                 </Flex>
+                <NavItem navSize={navSize} href="https://bored-circles-club.gitbook.io/product-docs/" icon={IoNewspaper} title="B.C.C/$CIR WHITEPAPER" />
+
                 <NavItem navSize={navSize} href="about" icon={MdSummarize} title="About BCC/CIR" />
 
                 <NavItem navSize={navSize} href="staking" icon={FaFunnelDollar} title="Stake CIR" />

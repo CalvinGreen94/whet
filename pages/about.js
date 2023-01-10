@@ -56,12 +56,11 @@ export default function AboutPage() {
                 <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center><Spacer /><br /><br />
                 <Center>
                     Compounding is the process in which an asset’s earnings, from either capital gains or interest, are reinvested to generate additional earnings over time. This growth, calculated using exponential functions, occurs because the investment will generate earnings from both its initial principal and the accumulated earnings from preceding periods.
-                    Compounding, therefore, differs from linear growth, where only the principal earns interest each period.
                 </Center>
             </Text>
 
             <Text textStyle="content">
-                Compound Frequency: 1200 Seconds
+                Compound Frequency: 8600 Seconds
                 <Center pb={10}>
                     <CBCC />
                 </Center>

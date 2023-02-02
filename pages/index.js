@@ -89,6 +89,23 @@ export default function Home() {
             <Center>
           <MBC />
           </Center>
+
+          <Center>
+
+
+
+<video 
+          // className={styles.aboutTrailer}
+          src="videos/demo.mp4" 
+          alt="generations"
+          controls
+          objectfit="cover"
+          layout="fill"
+      /> 
+
+
+
+</Center> 
           <Link href="https://bored-circles-club.gitbook.io/product-docs/">See more ...</Link>
             </Text>
 
@@ -144,22 +161,7 @@ export default function Home() {
             },
           }}
           > */}
-           <Center>
 
-{/* 
-
-          <video 
-                    className={styles.aboutTrailer}
-                    src="videos/demo.gif" 
-                    alt="generations"
-                    controls
-                    objectfit="cover"
-                    layout="fill"
-                /> */}
-
-
-
-          </Center> 
           {/* <MotionSimpleGrid 
             display="flex"
             mt="4"

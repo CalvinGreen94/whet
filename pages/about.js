@@ -13,13 +13,29 @@ export default function AboutPage() {
         <Box>
             <Head>
                 <title>
-                    Bored Circles | About Cir
+                    Bored Circles | $About Cir
                 </title>
                 {/* <meta name="description" content="TaurosDAO, Merca City, and Labyrinthine Unreal are all seamlessly part of an ecosystem known as The Ontological Game, which is the umbrella game that comprises them all, but with enough room for expansion as well as additional games, enterprises, and diversions." keywords="NFT, nftart, digitalart, digitalartist, mint, taurosdao, labyrinthine, game, cryptocurrency, crypto, ethereum, membership, art, metaverse, MMORTS, exploration, token, coin, altcoin, dao, multiplayer, simulation, sim, ecosystem" /> */}
             </Head>
 
-            <Center><Heading>About CIR</Heading></Center>
+            <Center><Heading>About $CIR</Heading></Center>
 
+
+            <Center pt={10}>
+
+                <Text textStyle="content">
+                    <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}>Staking:</span><br /><br /></Center>
+                    <Center>
+                    Welcome to Bored Circles Club $CIR Token Staking! The staking platform securely and conveniently handles staking of $CIR. The Bounce platform provides an intuitive interface for users to easily and securely stake their tokens and increase their stake rewards.At Bored Circles Club, we believe that anyone should be able to stake their tokens and secure the rewards. We have designed our platform to ensure that token holders get the most out of the Bored Circles NFT. The platform is designed to be simple and user-friendly, so that even those new to staking can easily get started. Bored Circles Club is committed to providing our users with the best possible experience, and Bored Circles Club is constantly working to improve the platform. Bored Circles Club is constantly innovating to ensure that each user get the best rewards and the highest security. Thank you for visiting . Start staking your tokens now and secure the rewards!
+                    </Center>
+                    <Center pb={10}>
+                    <SBB />
+                </Center>
+                </Text>
+
+
+
+            </Center>
 
             <Text textStyle="content">
                 {/* <span style={{ color: "black", fontWeight: "500" }}>About CIR </span>, <span style={{ color: "black", fontWeight: "500" }}></span> */}
@@ -33,29 +49,11 @@ export default function AboutPage() {
 
             </Text>
 
-            <Center pt={10}>
-
-                <Text textStyle="content">
-                    <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}><Link href="https://www.coinbase.com/learn/crypto-basics/what-is-staking">Staking</Link>:</span><br /><br /></Center>
-                    <Center>
-                        Staking is the process of locking up crypto holdings in order to obtain rewards or earn interest.
-                        Staking is a way to use your crypto holdings or coins to earn additional rewards. It can be helpful to think of it as along the lines of generating interest on cash savings, or earning dividends on stock holdings.
-                        Essentially, coin holders allow their crypto to be used as a part of the blockchain validation process, and are rewarded by the network for the use of their assets. For crypto investors, staking can open up another potential avenue to generating returns.
-                    </Center>
-                    <Center pb={10}>
-                    <SBB />
-                </Center>
-                </Text>
-
-
-
-            </Center>
             <Spacer /><br /><br />
             <Text textStyle="content">
-                <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}><Link href="https://www.coinbase.com/learn/crypto-basics/what-is-staking">Compounding</Link>:</span><br /><br /></Center>
-                <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center><Spacer /><br /><br />
+                <Spacer /> <Center><span style={{ color: "black", fontWeight: "500" }}>Compound $CIR:</span><br /><br /></Center>
                 <Center>
-                    Compounding is the process in which an asset’s earnings, from either capital gains or interest, are reinvested to generate additional earnings over time. This growth, calculated using exponential functions, occurs because the investment will generate earnings from both its initial principal and the accumulated earnings from preceding periods.
+                $CIR Compounding is a process of automated reinvestment of $CIR tokens into a liquidity pool in order to earn rewards. By automatically reinvesting $CIR, holders can earn rewards over time. The process is often referred to as a "compounding" effect, as it allows users to increase their holdings of a given token over time. Compounding is one way to increase $CIR holdings without having to actively trade tokens on an exchange.
                 </Center>
             </Text>
 

@@ -14,7 +14,7 @@ export default function AboutPage() {
                 <title>
                     Bored Circles | Compound CIR
                 </title>
-                {/* <meta name="description" content="TaurosDAO, Merca City, and Labyrinthine Unreal are all seamlessly part of an ecosystem known as The Ontological Game, which is the umbrella game that comprises them all, but with enough room for expansion as well as additional games, enterprises, and diversions." keywords="NFT, nftart, digitalart, digitalartist, mint, taurosdao, labyrinthine, game, cryptocurrency, crypto, ethereum, membership, art, metaverse, MMORTS, exploration, token, coin, altcoin, dao, multiplayer, simulation, sim, ecosystem" /> */}
+
             </Head>
 
             {/* <Heading textStyle="title" fontSize="3xl"><About /></Heading> */}
@@ -22,11 +22,12 @@ export default function AboutPage() {
 
             <Text textStyle="content">
                 <span style={{ color: "black", fontWeight: "500" }}>Compounding: </span>
-                <Center>“Compound interest is the eighth wonder of the world. He who understands it, earns it … he who doesn’t … pays it.”-Albert Einstein </Center>
+                <Center>$CIR Compounding is a secure, automated compounding platform designed to help users maximize their Bored Circles Club holding. The BCC platform provides users with a simple and easy to use interface, enabling them to quickly and securely compound their $CIR without needing to manually buy and sell them. With $CIR Compounding, users can easily monitor their holdings and will soon be able to choose from a wide range of compounding options to ensure their $CIR are always growing. With $CIR Compounding, users can easily optimize their holdings and take their NFT experience to the next level. </Center>
 
             </Text>
             
             <Center pt={10}>
+
                 {/* <video 
                     className={styles.aboutTrailer}
                     src="videos/demo.gif" 
@@ -40,7 +41,7 @@ export default function AboutPage() {
 
             <Text textStyle="content">
                 Compound  CIR
-                Compound Frequency: 1200 Seconds
+                Compound Frequency: 8600 Seconds
                 <Center pb={10}>
                     <CBCC />
                 </Center>  

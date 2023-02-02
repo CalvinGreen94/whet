@@ -55,20 +55,20 @@ export default function Home() {
 
             <Box textStyle="landingPageContent" mb={10} pb={0}>
             <Text textStyle="content"><font color="#010332">
-            <span style={{fontWeight: "400"}}><Center><Heading>Welcome To Bored Circles</Heading></Center> <Spacer />
+            <span style={{fontWeight: "400"}}><Center><Heading><Link href="https://bored-circles-club.gitbook.io/product-docs/">Welcome To Bored Circles Club</Link></Heading></Center> <Spacer />
 
             If you are here then you share a common love for circles and utility. This collection consists of 5555 Bored Circles NFTs currently minting at 0.008ETH. With every 1111 Bored Circles minted the mint price rises +0.01Ξ until mint has sold out.
             
-            <Spacer /> Bored Circles is paired with 55,555,555 CIR (Bounce Tokens) to be shared among holders for each deployed Circle. </span> <Spacer /> 30,858,025 CIR from the total circulating supply will be minted out in total to OG Bored Circle Club holders throughout the Bored Circles minting process. 
+            <Spacer /> Bored Circles is paired with 55,555,555 CIR (Bounce Tokens) to be shared among holders for each deployed Circle. </span> <Spacer /> 30,858,025 CIR from the total circulating supply will be minted out in total to OG Bored Circle Club holders throughout the Bored Circles minting process(For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain interest on $CIR). Non CIR holders will be able to swap ETH for CIR via UniSwap or metamask to stake and compound CIR tokens.
             <Spacer /> 
-            You can gain 0.005 CIR/hr via <span style={{fontWeight: "400"}}><Link href='staking'> Staking </Link>...</span>
+            Initially, you will automatically start gaining 0.005 CIR/hr via <span style={{fontWeight: "400"}}><Link href='about'> Staking </Link>...</span>
              </font>
             
             <Center>
           <MBC />
           </Center>
             
-          <Link href="about">See more ...</Link>
+          <Link href="https://bored-circles-club.gitbook.io/product-docs/">See more ...</Link>
             </Text>
             
             </Box>
@@ -133,14 +133,11 @@ export default function Home() {
         </Heading>
 
         <Text textStyle="content">
-            <br /><br />
-            <br /><br />
             <span style={{fontWeight: "400"}}>
-            For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain interest on CIR.
-            <br />
-            <br />
-            <Heading pt={20}>Phase 1:</Heading>
-            Liquiduity of CIR will be supplied from 69% of the funds accrued through Bored Circles mint and future projects involved with Bored Circles. Non CIR holders will be able to swap ETH for CIR via UniSwap to stake and compound CIR token as well after the Bored Circles mint is complete.
+            {/* <Heading pt={20}></Heading> */}
+            <Heading pt={20}><Link href="https://bored-circles-club.gitbook.io/product-docs/">Please Read Whitepaper</Link> </Heading>
+            
+
             
             </span>
         </Text>

@@ -59,9 +59,9 @@ export default function Home() {
 
             If you are here then you share a common love for circles and utility. This collection consists of 5555 Bored Circles NFTs currently minting at 0.008ETH. With every 1111 Bored Circles minted the mint price rises +0.01Ξ until mint has sold out.
             
-            <Spacer /> Bored Circles is paired with 55,555,555 CIR (Bounce Tokens) to be shared among holders for each deployed Circle. </span> <Spacer /> 30,858,025 CIR from the total circulating supply will be minted out in total to OG Bored Circle Club holders throughout the Bored Circles minting process(For Each "Bored Circles" NFT owned you will receive 5555 CIR . You can use these tokens to stake CIR in the Bounce contract to gain interest on $CIR). Non CIR holders will be able to swap ETH for CIR via UniSwap or metamask to stake and compound CIR tokens.
+            <Spacer /> Bored Circles is paired with 55,555,555 $CIR (Bounce Tokens) to be shared among holders for each deployed Circle. </span> <Spacer /> 30,858,025 $CIR from the total circulating supply will be minted out in total to OG Bored Circle Club holders throughout the Bored Circles minting process(For Each "Bored Circles" NFT owned you will receive 5555 $CIR . You can use these tokens to stake $CIR in the Bounce contract to gain interest on $CIR). Non $CIR holders will be able to swap ETH for $CIR via UniSwap or metamask to stake and compound $CIR tokens.
             <Spacer /> 
-            Initially, you will automatically start gaining 0.005 CIR/hr via <span style={{fontWeight: "400"}}><Link href='about'> Staking </Link>...</span>
+            Initially, you will automatically start gaining 0.005 $CIR/hr via <span style={{fontWeight: "400"}}><Link href='about'> Staking </Link>...</span>
              </font>
             
             <Center>

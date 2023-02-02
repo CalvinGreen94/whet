@@ -12,7 +12,7 @@ export default function AboutPage() {
         <Box>
             <Head>
                 <title>
-                    Bored Circles | Compound CIR
+                    Bored Circles | Compound $CIR
                 </title>
 
             </Head>
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </Center>
 
             <Text textStyle="content">
-                Compound  CIR
+                Compound  $CIR
                 Compound Frequency: 8600 Seconds
                 <Center pb={10}>
                     <CBCC />

@@ -96,9 +96,8 @@ export default function MBC() {
             </NumberInput>
           </FormControl>
           <Spacer />
-          {/* Mint TaurosDAO */}
           <Button disabled={!write} onClick={() => write?.()}>
-        Mint Bored Circles Member
+        Mint Bored Circles Club Member
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

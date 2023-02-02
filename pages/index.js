@@ -89,10 +89,43 @@ export default function Home() {
             <Center>
           <MBC />
           </Center>
-            
           <Link href="https://bored-circles-club.gitbook.io/product-docs/">See more ...</Link>
             </Text>
+
+
+            <Text textStyle="content">
+            <span style={{fontWeight: "400"}}>
+            {/* <Heading pt={20}></Heading> */}
+            <Heading pt={20}><Link href="https://bored-circles-club.gitbook.io/product-docs/">Please Read Whitepaper</Link> </Heading>
+
+            <Spacer />
+           <Center>
+            <Text>After Reading Whitepaper feel free to ask ChatGPT any questions about blockchain operations.</Text>
+            <Spacer />
+            <div className={styles.center}>
+            <Textarea status="secondary" 
+            placeholder="Enter a prompt"
+            onChange={(e) => setPrompt(e.target.value)}
+            row="5"
+            cols="50"
             
+          />
+          <Button onClick={getResponseFromOpenAI}>
+            Get Response
+          </Button>
+
+          <div className={styles.response}>
+            {isLoading ? (
+              <div>Waiting for response ...</div>
+            ) : (
+              <div>{response}</div>
+            )}
+          </div>
+          </div>
+          </Center> 
+</span>
+</Text>
+      
             </Box>
         </Box>
         
@@ -150,38 +183,8 @@ export default function Home() {
             /> */}
         {/* </Box> */}
 
-        <Heading pt={20}>
-          {/* <LU /> */}
-        </Heading>
+  
 
-        <Text textStyle="content">
-            <span style={{fontWeight: "400"}}>
-            {/* <Heading pt={20}></Heading> */}
-            
-            <Heading pt={20}><Link href="https://bored-circles-club.gitbook.io/product-docs/">Please Read Whitepaper</Link> </Heading>
-            <Spacer />
-            Ask any extra questions to Chat-GPT/OpenAI after reading whitepaper about any more information regarding blockchain operations.
-            <Textarea  status="secondary"
-            placeholder="Enter a prompt"
-            onChange={(e) => setPrompt(e.target.value)}
-            row="5"
-            cols="50"
-          />
-
-<Button onClick={getResponseFromOpenAI}>
-            Get Response
-          </Button>
-
-          <div className={styles.response}>
-            {isLoading ? (
-              <div>Waiting for response ...</div>
-            ) : (
-              <div>{response}</div>
-            )}
-          </div>
-            
-            </span>
-        </Text>
     </Box>
   );
 }

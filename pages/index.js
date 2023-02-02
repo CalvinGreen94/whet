@@ -81,7 +81,7 @@ export default function Home() {
                        
                         Circles spinning all around, Reaching out, never bound Spinning faster and faster, Rising higher, never ending. Circles all around us, Moving us and astound us, The spinning never stops, Oh, the wonderful circles, Circles in the sky and sea, In the wind, and in between, The beauty and the mystery, The splendor of the circles.  Circles all around us, Moving us and astound us, The spinning never stops, Oh, the wonderful circles, Bridge: Circles, spinning in the night, Circles, leading us to the light, Circles, guiding us through the night, Circles, never ending in sight Chorus: Circles all around us, Moving us and astound us, The spinning never stops, Oh, the wonderful circles!
                        
-                       </Text>
+                       </font> </Text>
               
             <Text textStyle="content"><font color="#010332">
             <span style={{fontWeight: "400"}}><Center><Heading><Link href="https://bored-circles-club.gitbook.io/product-docs/">Welcome To Bored Circles Club</Link></Heading></Center> <Spacer />

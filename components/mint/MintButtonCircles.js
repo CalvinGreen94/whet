@@ -97,7 +97,7 @@ export default function MBC() {
           </FormControl>
           <Spacer />
           <Button disabled={!write} onClick={() => write?.()}>
-        Mint Bored Circles Club Member
+        Mint Bored Circles 
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

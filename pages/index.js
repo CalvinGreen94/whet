@@ -4,7 +4,7 @@ import { cardVariant, parentVariant } from '@components/animations/motion'
 import products from '@components/data/products/'
 import ProductCard from '@components/cards/ProductCard'
 import ProductModal from '@components/cards/ProductModal'
-import { Box, Flex, Spacer, Center, Grid, HStack, SimpleGrid, Text, Link, Heading, Collapse, useDisclosure, IconButton } from '@chakra-ui/react'
+import { Box, Button,Flex, Spacer, Center, Grid, HStack, SimpleGrid, Text, Link, Heading, Collapse, useDisclosure, IconButton } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import styles from '@styles/MintButton.module.css'
@@ -12,6 +12,7 @@ import { TbArrowBigDownLines, TbArrowBigUpLines } from 'react-icons/tb'
 // import Title, { LU } from '@components/animations/AnimatedTitles'
 import { useInView } from 'react-intersection-observer'
 import MBC from '@components/mint/MintButtonCircles'
+import { Textarea } from '@nextui-org/react';
 
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
@@ -20,6 +21,9 @@ const MotionIconButton = motion(IconButton)
 export default function Home() { 
   const [modalData, setModalData] = useState(null)
   const { isOpen, onToggle } = useDisclosure()
+  const [prompt, setPrompt] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [response, setResponse] = useState("");
 
   const [ref, inView] = useInView({
       threshold: 0.3,
@@ -41,6 +45,24 @@ export default function Home() {
       scale: 2
     }
   }
+
+  const getResponseFromOpenAI = async () => {
+    setResponse("");
+    console.log("Getting response from OpenAI...");
+    setIsLoading(true);
+    const response = await fetch("/api/openai", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt: prompt }),
+    });
+
+    const data = await response.json();
+    setIsLoading(false);
+    console.log(data.text);
+    setResponse(data.text);
+  };
 
   return (
     <Box>
@@ -135,9 +157,28 @@ export default function Home() {
         <Text textStyle="content">
             <span style={{fontWeight: "400"}}>
             {/* <Heading pt={20}></Heading> */}
-            <Heading pt={20}><Link href="https://bored-circles-club.gitbook.io/product-docs/">Please Read Whitepaper</Link> </Heading>
             
+            <Heading pt={20}><Link href="https://bored-circles-club.gitbook.io/product-docs/">Please Read Whitepaper</Link> </Heading>
+            <Spacer />
+            Ask any extra questions to Chat-GPT/OpenAI after reading whitepaper about any more information regarding blockchain operations.
+            <Textarea  status="secondary"
+            placeholder="Enter a prompt"
+            onChange={(e) => setPrompt(e.target.value)}
+            row="5"
+            cols="50"
+          />
 
+<Button onClick={getResponseFromOpenAI}>
+            Get Response
+          </Button>
+
+          <div className={styles.response}>
+            {isLoading ? (
+              <div>Waiting for response ...</div>
+            ) : (
+              <div>{response}</div>
+            )}
+          </div>
             
             </span>
         </Text>

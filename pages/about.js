@@ -8,6 +8,8 @@ import UI from '@components/mint/userInfo'
 import SBB from '@components/mint/StakeButtonBounce'
 import Rewards from '@components/mint/rewards'
 import CR from '@components/mint/claimRewards'
+import {Chat} from "@components/chatUI"
+
 export default function AboutPage() {
     return (
         <Box>
@@ -66,6 +68,14 @@ export default function AboutPage() {
                 <CR />
             </Text>
 
+            {/* <Text textStyle="content">
+                Compound Frequency: 8600 Seconds
+                <Center pb={10}>
+                    <Chat />
+                </Center>
+            </Text> */}
+
         </Box>
+        
     )
 }

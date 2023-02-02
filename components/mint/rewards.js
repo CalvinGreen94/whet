@@ -13,7 +13,7 @@ export default function Rewards() {
   console.log(address1)
   const toast = useToast()
 
-  //CIR Price : TODO fetch price from Contract for automatic update
+  //$CIR Price : TODO fetch price from Contract for automatic update
 //   const price = Web3.utils.toWei("0.0005", "ether")
 
   // Initialze claimBCC Contract write
@@ -56,7 +56,7 @@ export default function Rewards() {
 //     onSuccess(data){
 //       toast({
 //         title: 'Compound Successful',
-//         description: "Staked CIR Compunded by ...% :)",
+//         description: "Staked $CIR Compunded by ...% :)",
 //         status: 'success',
 //         duration: 9000,
 //         isClosable: true,
@@ -65,7 +65,7 @@ export default function Rewards() {
 //     },
 //     onError(error) {
 //       toast({
-//         title: 'Compoundl Failed.. User rejected the transaction or not enough Gas To Stake CIR',
+//         title: 'Compoundl Failed.. User rejected the transaction or not enough Gas To Stake $CIR',
 //         description: console.log(error),
 //         status: "error",
 //         duration: '9000',
@@ -86,7 +86,7 @@ export default function Rewards() {
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
-      <p> Your CIR Rewards: {data1}</p>
+      <p> Your $CIR Rewards: {data1}</p>
       </Box>
     </>
   )

@@ -14,7 +14,7 @@ export default function SBB() {
   const { address } = useAccount()
   console.log(address)
   const toast = useToast()
-  //CIR Price : TODO fetch price from Contract for automatic update
+  //$CIR Price : TODO fetch price from Contract for automatic update
 //   const price = Web3.utils.toWei("0.0005", "ether")
 
   // Initialze claimBCC Contract write
@@ -50,7 +50,7 @@ export default function SBB() {
     onSuccess(data){
       toast({
         title: 'Stake Successful',
-        description: "Staked CIR :)",
+        description: "Staked $CIR :)",
         status: 'success',
         duration: 9000,
         isClosable: true,
@@ -59,7 +59,7 @@ export default function SBB() {
     },
     onError(error) {
       toast({
-        title: 'Stake Failed.. User rejected the transaction or not enough Gas To Stake CIR',
+        title: 'Stake Failed.. User rejected the transaction or not enough Gas To Stake $CIR',
         description: console.log(error),
         status: "error",
         duration: '9000',
@@ -102,7 +102,7 @@ export default function SBB() {
           <Spacer />
           {/* Mint BCCDAO */}
           <Button disabled={!write} onClick={() => write?.()}>
-            Stake CIR
+            Stake $CIR
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

@@ -50,7 +50,7 @@ export default function WTH() {
     onSuccess(data){
       toast({
         title: 'Withdraw Successful',
-        description: "Staked CIR Withdrawn:)",
+        description: "Staked $CIR Withdrawn:)",
         status: 'success',
         duration: 9000,
         isClosable: true,
@@ -100,7 +100,7 @@ export default function WTH() {
           <Spacer />
           {/* Mint BCCDAO */}
           <Button disabled={!write} onClick={() => write?.()}>
-            Withdraw CIR
+            Withdraw $CIR
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

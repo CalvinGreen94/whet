@@ -12,7 +12,7 @@ export default function CBCC() {
   console.log(address)
   const toast = useToast()
 
-  //CIR Price : TODO fetch price from Contract for automatic update
+  //$CIR Price : TODO fetch price from Contract for automatic update
 //   const price = Web3.utils.toWei("0.0005", "ether")
 
   // Initialze claimBCC Contract write
@@ -48,7 +48,7 @@ export default function CBCC() {
     onSuccess(data){
       toast({
         title: 'Compound Successful',
-        description: "Staked CIR Compunded by ...% :)",
+        description: "Staked $CIR Compunded by ...% :)",
         status: 'success',
         duration: 9000,
         isClosable: true,
@@ -57,7 +57,7 @@ export default function CBCC() {
     },
     onError(error) {
       toast({
-        title: 'Compoundl Failed.. User rejected the transaction or not enough Gas To Stake CIR',
+        title: 'Compoundl Failed.. User rejected the transaction or not enough Gas To Stake $CIR',
         description: console.log(error),
         status: "error",
         duration: '9000',
@@ -85,7 +85,7 @@ export default function CBCC() {
               Compound Rewards
             </FormLabel>
           <Button disabled={!write} onClick={() => write?.()}>
-            Compound CIR
+            Compound $CIR
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

@@ -12,7 +12,7 @@ export default function CR() {
     console.log(address)
     const toast = useToast()
 
-    //CIR Price : TODO fetch price from Contract for automatic update
+    //$CIR Price : TODO fetch price from Contract for automatic update
     //   const price = Web3.utils.toWei("0.0005", "ether")
 
     // Initialze claimBCC Contract write
@@ -48,7 +48,7 @@ export default function CR() {
         onSuccess(data) {
             toast({
                 title: 'Claim Successful',
-                description: "claimed CIR Compunded by ...% :)",
+                description: "claimed $CIR Compunded by ...% :)",
                 status: 'success',
                 duration: 9000,
                 isClosable: true,
@@ -57,7 +57,7 @@ export default function CR() {
         },
         onError(error) {
             toast({
-                title: 'Claim Failed.. User rejected the transaction or not enough Gas To Stake CIR',
+                title: 'Claim Failed.. User rejected the transaction or not enough Gas To Stake $CIR',
                 description: console.log(error),
                 status: "error",
                 duration: '9000',
@@ -84,7 +84,7 @@ export default function CR() {
                     <FormLabel htmlFor="amount" textAlign="right">
                         Claim Rewards
                         <Button disabled={!write} onClick={() => write?.()}>
-                        Claim CIR
+                        Claim $CIR
                     </Button>
                     </FormLabel>
 

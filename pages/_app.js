@@ -17,6 +17,7 @@ import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
+import { SSRProvider } from 'react-bootstrap';
 
 const { provider, webSocketProvider, chains } = configureChains(
   [mainnet],
@@ -60,6 +61,7 @@ const client = createClient({
 
 function MyApp({ Component, pageProps }) {
   return (
+    <SSRProvider>
 
     <Provider store={store}>
       <WagmiConfig client={client}>
@@ -79,6 +81,7 @@ function MyApp({ Component, pageProps }) {
         </ChakraProvider>
       </WagmiConfig>
     </Provider>
+    </SSRProvider>
 
 
   )

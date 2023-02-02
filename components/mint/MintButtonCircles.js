@@ -17,10 +17,10 @@ export default function MBC() {
 
   // Initialze claimTauros Contract write
   const { config, error } = usePrepareContractWrite({
-    address: '0x21BEEeEAb4fff8F20D3C25280741169BD8Be4420',
+    address: '0x209999D71C5D422dB0d1ce92860d75475608fFad',
     abi: [
       {
-        name: 'deployCircle',
+        name: 'claimBoredCircle',
         type: 'function',
         stateMutability: 'payable',
         inputs:
@@ -31,7 +31,7 @@ export default function MBC() {
         outputs: [],
       },
     ],
-    functionName: 'deployCircle',
+    functionName: 'claimBoredCircle',
     overrides: {
       // Override Price 
       value: String(price * amount),
@@ -98,7 +98,7 @@ export default function MBC() {
           <Spacer />
           {/* Mint TaurosDAO */}
           <Button disabled={!write} onClick={() => write?.()}>
-            Deploy Bored Circles
+        Mint Bored Circles Member
           </Button>
           {/* <Box>{error && (
             <div>{error.message}</div>

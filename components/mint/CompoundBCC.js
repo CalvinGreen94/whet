@@ -84,9 +84,13 @@ export default function CBCC() {
             <FormLabel htmlFor="amount" textAlign="right">
               Compound Rewards
             </FormLabel>
-          <Button disabled={!write} onClick={() => write?.()}>
+
+<Button>Compounding not yet available</Button>
+          {/* <Button disabled={!write} onClick={() => write?.()}>
             Compound $CIR
-          </Button>
+          </Button> */}
+
+
           {/* <Box>{error && (
             <div>{error.message}</div>
           )}</Box> */}

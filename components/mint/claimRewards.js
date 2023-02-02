@@ -83,9 +83,13 @@ export default function CR() {
                 }}>
                     <FormLabel htmlFor="amount" textAlign="right">
                         Claim Rewards
-                        <Button disabled={!write} onClick={() => write?.()}>
+                        <Button>Claiming not yet available</Button>
+
+                        {/* <Button disabled={!write} onClick={() => write?.()}>
                         Claim $CIR
-                    </Button>
+                    </Button> */}
+
+
                     </FormLabel>
 
                     {/* <Box>{error && (

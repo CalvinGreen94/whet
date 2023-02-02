@@ -101,9 +101,14 @@ export default function SBB() {
           </FormControl>
           <Spacer />
           {/* Mint BCCDAO */}
-          <Button disabled={!write} onClick={() => write?.()}>
+
+<Button>Staking Coming Soon</Button>
+
+          {/* <Button disabled={!write} onClick={() => write?.()}>
             Stake $CIR
-          </Button>
+          </Button> */}
+
+
           {/* <Box>{error && (
             <div>{error.message}</div>
           )}</Box> */}

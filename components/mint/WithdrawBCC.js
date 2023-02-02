@@ -99,9 +99,14 @@ export default function WTH() {
           </FormControl>
           <Spacer />
           {/* Mint BCCDAO */}
-          <Button disabled={!write} onClick={() => write?.()}>
+          <Button>Withdraw $CIR Not Yet Available</Button>
+
+
+          {/* <Button disabled={!write} onClick={() => write?.()}>
             Withdraw $CIR
-          </Button>
+          </Button> */}
+
+
           {/* <Box>{error && (
             <div>{error.message}</div>
           )}</Box> */}

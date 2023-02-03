@@ -86,7 +86,7 @@ export default function MBC() {
               Amount to Deploy
             </FormLabel>
 
-            <NumberInput step={1} min={1} max={10} defaultValue={1} onChange={handleChange} allowMouseWheel>
+            <NumberInput step={1} min={1} max={5} defaultValue={1} onChange={handleChange} allowMouseWheel>
               <NumberInputField id="amount" value={amount} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />

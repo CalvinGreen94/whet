@@ -103,7 +103,7 @@ export default function Home() {
 
 <video 
           // className={styles.aboutTrailer}
-          src="videos/demo.mp4" 
+          src="videos/circles.mp4" 
           alt="generations"
           controls
           objectfit="cover"

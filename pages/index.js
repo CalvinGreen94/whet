@@ -126,7 +126,7 @@ export default function Home() {
            <Center>
             <Text>After Reading Whitepaper feel free to ask ChatGPT any questions about blockchain operations.</Text>
             <Spacer />
-            <div className={styles.center}>
+            {/* <div className={styles.center}> */}
             <Textarea status="secondary" 
             placeholder="Enter a prompt"
             onChange={(e) => setPrompt(e.target.value)}
@@ -138,14 +138,14 @@ export default function Home() {
             Get Response
           </Button>
 
-          <div className={styles.response}>
+          <div>
             {isLoading ? (
               <div>Waiting for response ...</div>
             ) : (
               <div>{response}</div>
             )}
           </div>
-          </div>
+          {/* </div> */}
           </Center> 
 </span>
 </Text>
